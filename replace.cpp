@@ -2,8 +2,8 @@
 
 using namespace std;
 
-const char FROM = '.';
-const char TO = ',';
+const char FROM = /*set what symbol you want to replace*/;
+const char TO = /*set with what symbol you want to replace FROM*/;
 
 int main() {
     freopen("new_captions.srt", "r", stdin);

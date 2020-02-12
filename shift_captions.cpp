@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const float SHIFT = 9;
+const float SHIFT = /*set how many seconds you want to shift subtitles*/;
 const float HOUR = 3600;
 const float MINUTE = 60;
 
@@ -14,8 +14,8 @@ inline bool is_blank(char & c);
 
 int main() {
     // if you need you can change input and output files
-    FILE * readFile = fopen("new_pope_good.srt", "r");
-    FILE * writeFile = fopen("new_captions.srt", "w");
+    FILE * readFile = fopen("INPUT_FILE.srt", "r");
+    FILE * writeFile = fopen("OUTPUT_FILE.srt", "w");
 
     int caption_num;
     while (fscanf(readFile, "%d", &caption_num) == 1) {
